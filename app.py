@@ -1,3 +1,19 @@
+import psycopg2
+import streamlit as st
+
+conn = psycopg2.connect(
+    host="192.168.1.128",
+    dbname = "appdb"   
+    user = "appuser"
+    password = "Booklife01"
+)
+
+cur = conn.cursor()
+cur.execute("SELECT * FROM my_table LIMIT 5;")
+rows = cur.fetchall()
+st.write(rows)
+
+
 import socket, os, streamlit as st
 
 target = ("192.168.1.128", 5433)
