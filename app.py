@@ -18,3 +18,5 @@ try:
     sock.close()
 except Exception as e:
     st.error(f"TCP failed to {target}: {e!r}")
+
+st.write("DB URL:", st.secrets["database"]["url"])
