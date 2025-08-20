@@ -3,8 +3,8 @@ import streamlit as st
 
 conn = psycopg2.connect(
     host="192.168.1.128",
-    dbname = "appdb"   
-    user = "appuser"
+    dbname = "appdb",   
+    user = "appuser",
     password = "Booklife01"
 )
 
