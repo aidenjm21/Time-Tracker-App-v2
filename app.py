@@ -21,7 +21,7 @@ st.write("Sample rows:", rows)
 
 # --- Optional diagnostics ---
 with st.expander("Diagnostics"):
-    target = ("192.168.1.128", 5433)
+    target = ("100.121.48.50", 5433)
     st.write("Hostname:", socket.gethostname())
     st.write("Env hint:", os.environ.get("HOSTNAME") or os.environ.get("COMPUTERNAME"))
 
